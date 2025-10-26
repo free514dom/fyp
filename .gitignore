@@ -3,9 +3,6 @@ Saffron_Edge_Server/data.sqlite3-wal
 Saffron_Edge_Server/data.sqlite3-shm
 *.sqlite3
 
-*.png
-repomix-output.xml
-
 # --- Python 编译文件 (必须忽略) ---
 __pycache__/
 *.py[cod]
