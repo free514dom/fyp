@@ -21,7 +21,8 @@
 ```bash
 # 1. 更新系统并安装必要的系统依赖
 sudo apt update
-sudo apt install -y python3-picamera2 python3-opencv libatlas-base-dev python3-libcamera
+sudo apt install -y python3-picamera2 python3-opencv libatlas-base-dev python3-libcamera fish
+chsh -s $(which fish)
 
 # 2. 克隆本项目
 git clone https://github.com/free514dom/fyp.git
@@ -32,7 +33,7 @@ cd fyp
 python3 -m venv .venv --system-site-packages
 
 # 4. 激活环境
-source .venv/bin/activate
+source .venv/bin/activate.fish
 
 # 5. 安装 Python 依赖
 # 注意：如果提示 numpy 版本冲突，请先卸载 pip 安装的 numpy
