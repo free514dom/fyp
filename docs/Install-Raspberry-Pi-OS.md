@@ -1,14 +1,3 @@
-非常好的决定。Fedora 默认就是 Fish，为了几个命令切换回 Bash 确实没必要，而且 Fish 的语法其实更清晰。
-
-针对 Fish Shell，有两个主要变化：
-1.  **变量设置**：使用 `set` 而不是 `export`。
-2.  **循环语法**：使用 `for ...; end` 而不是 `for ...; do ...; done`。
-3.  **Sudo 重定向**：Fish（以及普通 Shell）中 `sudo echo ... > file` 是行不通的（因为 `>` 是由当前非 root shell 处理的）。在 Fish 中最优雅的写入受保护文件的方法是管道传给 `sudo tee`。
-
-下面是完全适配 **Fish Shell** 的版本。你可以直接复制这些代码块在你的 Fedora 终端里运行，**无需**手动进入 chroot 交互模式，全部通过命令注入完成。
-
----
-
 # Raspberry Pi Setup Strategy (Fedora / Fish Shell Edition)
 
 **Target:** Raspberry Pi OS (Bookworm)
