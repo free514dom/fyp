@@ -1,5 +1,3 @@
----
-
 # 🌱 基于边缘计算的藏红花智能培育系统
 # Saffron Intelligent Cultivation System
 
