@@ -1,9 +1,13 @@
-Saffron_Edge_Server/data.sqlite3
-Saffron_Edge_Server/data.sqlite3-wal
-Saffron_Edge_Server/data.sqlite3-shm
+# --- Database Files (SQLite 及其 WAL/SHM 临时文件) ---
+edge-server/data.sqlite3
+edge-server/data.sqlite3-shm
+edge-server/data.sqlite3-wal
 *.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
 
-# --- Python 编译文件 (必须忽略) ---
+# --- Python Compiled Files ---
 __pycache__/
 *.py[cod]
 *$py.class
+
