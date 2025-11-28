@@ -45,8 +45,8 @@ echo "✅ 挂载完成"
 
 ```fish
 # === 写入 WiFi 配置 ===
-cat <<EOF | sudo tee $MNT_DIR/etc/NetworkManager/system-connections/PixelHotspot.nmconnection > /dev/null
-[connection]
+# Fish 允许直接使用多行字符串，这比 cat <<EOF 更稳定
+echo "[connection]
 id=PixelHotspot
 uuid=6fad2b0b-98a7-4796-ae19-3bfd30bd3e97
 type=wifi
@@ -68,8 +68,7 @@ method=auto
 addr-gen-mode=default
 method=auto
 
-[proxy]
-EOF
+[proxy]" | sudo tee $MNT_DIR/etc/NetworkManager/system-connections/PixelHotspot.nmconnection > /dev/null
 
 # === 修正权限 (必须为 600) ===
 sudo chmod 600 $MNT_DIR/etc/NetworkManager/system-connections/PixelHotspot.nmconnection
