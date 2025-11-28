@@ -2,7 +2,6 @@ Flask
 flask-cors
 pyserial
 mpremote
-numpy
 opencv-python-headless
 requests
 itsdangerous
