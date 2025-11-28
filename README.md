@@ -48,8 +48,8 @@ sudo apt update
 sudo apt install -y python3-picamera2 python3-opencv libatlas-base-dev python3-libcamera
 
 # 2. 克隆本项目
-git clone https://github.com/your-username/saffron-system.git
-cd saffron-system
+git clone https://github.com/free514dom/fyp.git
+cd fyp
 
 # 3. 创建允许使用系统包的虚拟环境 (关键步骤!)
 # 注意：必须使用 --system-site-packages 否则无法加载摄像头驱动
