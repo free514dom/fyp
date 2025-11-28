@@ -88,23 +88,6 @@ chmod +x setup.sh
 
 ---
 
-## 📖 使用说明
-
-### Web 界面
-访问 `http://<树莓派IP>:5000` 进入控制台。
-*   **首次登录**: 注册的第一个用户将自动成为**管理员**。
-*   **实时监控**: 首页查看传感器数值。
-*   **AI 分析**: 点击 "📸 拍照" 或 "🔬 AI视觉分析" 获取当前作物状态。
-
-### 手势控制 (STM32 端)
-无需操作电脑，直接对着设备挥手：
-*   **向左/向右 (Left/Right)**: 切换 OLED 显示页面 (主页/控制页/信息页)。
-*   **控制页模式下**:
-    *   **向前/向后 (Forward/Backward)**: 切换选中的设备 (水泵/灯带)。
-    *   **向上/向下 (Up/Down)**: 开启或关闭选中的设备。
-
----
-
 ## ❓ 常见问题排查 (Troubleshooting)
 
 **Q: 报错 `ValueError: numpy.dtype size changed`?**
@@ -116,8 +99,3 @@ chmod +x setup.sh
     卸载后，Python 会自动回退使用系统自带的 `numpy` (通常是 1.24.x)，此时即可正常工作。
 
 ---
-
-## 📄 开源协议
-
-本项目采用 [BSD 3-Clause License](LICENSE) 许可协议。
-Copyright (c) 2025, free514dom.
