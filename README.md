@@ -105,24 +105,6 @@ chmod +x setup.sh
 
 ---
 
-## 📂 项目结构
-
-```text
-├── edge-server/           # 树莓派端代码 (Flask App)
-│   ├── app.py             # 主服务入口
-│   ├── db.py              # SQLite 数据库操作
-│   ├── templates/         # 前端 HTML 页面
-│   └── static/            # 拍摄的照片与分析结果
-├── firmware/              # STM32端代码 (MicroPython)
-│   ├── main.py            # MCU 主程序循环
-│   └── lib/               # 硬件驱动 (DHT11, PAJ7620, SSD1306)
-├── scripts/               # 实用脚本
-│   └── take_photo.py      # 摄像头独立测试脚本
-└── setup.sh               # 一键部署与服务配置脚本
-```
-
----
-
 ## ❓ 常见问题排查 (Troubleshooting)
 
 **Q: 报错 `ValueError: numpy.dtype size changed`?**
@@ -138,4 +120,4 @@ chmod +x setup.sh
 ## 📄 开源协议
 
 本项目采用 [BSD 3-Clause License](LICENSE) 许可协议。
-Copyright (c) 2025, KunYang-tfswufe.
+Copyright (c) 2025, free514dom.
