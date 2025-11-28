@@ -125,9 +125,6 @@ chmod +x setup.sh
 
 ## ❓ 常见问题排查 (Troubleshooting)
 
-**Q: 网页点击拍照提示 "Resource busy" 或 "初始化失败"?**
-*   **A:** 摄像头不支持多进程同时访问。请确保没有其他脚本（如 `take_photo.py`）在运行。如果修改了代码，请重启服务：`sudo systemctl restart saffron-server`。
-
 **Q: 报错 `ValueError: numpy.dtype size changed`?**
 *   **A:** 这是因为 `pip` 安装的新版 `numpy` (2.x) 与树莓派系统自带的 `picamera2` 不兼容。解决方法：
     ```bash
@@ -135,9 +132,6 @@ chmod +x setup.sh
     pip uninstall numpy -y
     ```
     卸载后，Python 会自动回退使用系统自带的 `numpy` (通常是 1.24.x)，此时即可正常工作。
-
-**Q: STM32 数据未更新?**
-*   **A:** 检查 USB 线连接是否松动，或者执行 `dmesg | grep tty` 确认端口是否为 `/dev/ttyACM0`。
 
 ---
 
