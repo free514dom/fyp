@@ -1,4 +1,4 @@
-# 🌱 基于边缘计算的藏红花智能培育系统
+# 🌱 基于边缘计算的藏红花智能培育系统.
 # Saffron Intelligent Cultivation System
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE)
